@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +7,9 @@
 }
 body{
     font-family: Poppins;
+    
 }
+/* navbar design */
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -39,6 +41,8 @@ body{
     max-width: 1440px;
     /* margin: 0 auto; */
 }
+
+ /* banner design */
 .banner{
     display: flex;
     justify-content: space-between;
@@ -49,16 +53,17 @@ body{
 .banner-content{
     width: 592px;
     margin-left: 120px;
-    margin-right: 130px;
+    margin-right: 120px;
 }
 .banner-image{
-    border-radius: 50%;
-    border: 1px solid rgb(218, 186, 218);
+     margin-right: 60px;
+    background-image: url(../images/Circle\ design.svg);
     margin-top: 80px;
 }
 .banner-camera{
     width: 100%;
     height: 400px;
+    margin: 0 auto;
 }
 .banner-title{
     color: #3A3A3A;
@@ -81,6 +86,81 @@ body{
     margin-top: 16px;
 }
 
+/* shopping card style */
+.collection{
+    width: 1047px;
+    height: 1662px;
+    margin: 100px 200px;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.Shops{
+    margin-left: 165px;
+    margin-right: 165px;
+    border: 2px solid rgba(128, 128, 128, 0.056);
+    width: 1100px;
+    /* height: 110px; */
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    padding: 36px 60px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+} 
+.Shops>img{
+    width: 100%;
+}
+
+.collection-title{
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 4.375rem;
+    color: #3A3A3A;
+}
+.card{
+    padding: 17px 14px;
+    width: 329px;
+    height: 490px;
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+}
+.card-image{
+     width: 100%;
+}
+.card-title{
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    color: #18191F; 
+    margin-top: 16px;
+}
+.price{
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 1.5rem;
+} 
+.stars{
+    color: #FB8200;
+    display: flex;
+    align-items: center;
+}
+.rating{
+    margin-left: 15px;
+    color: #3A3A3A;
+}
+.card-description{
+    width: 200px;
+    height: 61px;
+    font-size: 0.87rem;
+    font-weight: bold;
+    line-height: 143%;
+    letter-spacing: 1.8%;
+    color: 787885;
+}
 /* Responsive for phone display */
 
 @media screen and (max-width: 576px) {
@@ -111,5 +191,10 @@ body{
         margin-top: 14px;
 
     }
+    .Shops{
+        flex-wrap: wrap;
+        
+    }
+    
     
 }
